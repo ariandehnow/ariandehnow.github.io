@@ -4,10 +4,6 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    min-width: 100vw;
     font-family: system-ui;
     background-image: url("../images/red_hay.png");
     width: 1439px;
@@ -35,17 +31,13 @@ body {
     font-weight: bold;    
 }
 
-.wrapper {
-    position: fixed;
-    padding: 0 40px;
-}
-
 .menu-area {
     display: flex;
     flex-direction: column;
+    position: fixed;
+    padding: 0 40px;
     justify-content: space-between;
     height: 100vh;
-
 }
 
 .menu-area li{
@@ -76,13 +68,10 @@ ion-icon {
     font-size: 2rem; 
 }
 
-.socials {
+.socials-area {
     margin-left: auto;
     right: 40px;
     position: fixed;
-}
-
-.socials-area {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,19 +96,16 @@ ion-icon {
 
 
 footer {
+    display: flex;
+    flex-direction: column;
+    right: 60px;
     height: auto;
-    width: 100vw;
-    padding-top: 40px;
     position: fixed;
-    overflow: hidden;
-    bottom: 40px;
+    bottom: 52px;
     color: white;
 }
 
 .footer-content {
-    display: flex;
-    flex-direction: column;
     text-align: right;
-    margin-right: 40px;
     font-size: .4rem;
 }
