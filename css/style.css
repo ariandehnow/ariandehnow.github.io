@@ -10,15 +10,15 @@ body {
     min-width: 100vw;
     font-family: system-ui;
     background-image: url("../images/red_hay.png");
-    width: 980px;
-    height: 633px;
+    width: 1439px;
+    height: 931px;
     background-repeat: no-repeat;
-    background-size: 980px;
+    background-size: 1439px;
 }
 
 @font-face {
-    font-family: portgas;
-    src: url("../fonts/Portgas\ Display.otf");
+    font-family: portgas_bold;
+    src: url("../fonts/Portgas\ Display-Bold.otf");
   }
 
 @font-face {
@@ -45,7 +45,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    width: 858px;
+
 }
 
 .menu-area li{
@@ -58,8 +58,8 @@ body {
 .menu-area li a{
     text-decoration: none;
     position: relative;
-    font-family: "portgas";
-    font-size: 1rem;
+    font-family: "portgas_bold";
+    font-size: 1.6rem;
     color: white;
     transition: color 0.05s;
 }
@@ -69,11 +69,11 @@ body {
 }
 
 ion-icon {
-   font-size: 1.5rem; 
+   font-size: 2rem; 
 }
 
 .fa-brands {
-    font-size: 1.5rem; 
+    font-size: 2rem; 
 }
 
 .socials {
