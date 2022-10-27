@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: system-ui;
+    background-image: url("../images/red_hay.png");
+    width: 5900px;
+    height: 3815px;
+    background-repeat: no-repeat;
+    background-size: 5900px;
+}
+
+@font-face {
+    font-family: portgas;
+    src: url("../fonts/Portgas\ Display.otf");
+  }
+
+@font-face {
+    font-family: parchment;
+    src: url("../fonts/parchment.ttf");
+  }
+
+  @font-face {
+    font-family: source_code;
+    src: url("../fonts/source-code-pro/SourceCodePro-Regular.otf");
+  }
+
+.title {
+    font-weight: bold;    
+}
+
+.wrapper {
+    position: fixed;
+    padding: 0 200px;
+}
+
+.menu-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 858px;
+}
+
+.menu-area li{
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.menu-area li a{
+    text-decoration: none;
+    position: relative;
+    font-family: "portgas";
+    font-size: 6rem;
+    color: white;
+    transition: color 0.05s;
+}
+
+.menu-area li a:hover{
+    color:#8d2c1f;
+}
+
+ion-icon {
+   font-size: 6rem; 
+}
+
+.fa-brands {
+    font-size: 6rem; 
+}
+
+.socials {
+    margin-left: auto;
+    right: 200px;
+    position: fixed;
+}
+
+.socials-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.socials-area li{
+    position: relative;
+    padding: 20px;
+}
+
+.socials-links {
+    color: white;
+    transition: color 0.05s;
+    text-decoration: none;
+}
+
+.socials-links:hover {
+    color:#8d2c1f;
+}   
+
+
+footer {
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    position: fixed;
+    overflow: hidden;
+    bottom: 150px;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 200px;
+    font-size: 1.8rem;
+}
