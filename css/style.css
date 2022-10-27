@@ -32,6 +32,15 @@ body {
     font-weight: bold;    
 }
 
+@keyframes transitionIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .menu-area {
     display: flex;
     flex-direction: column;
@@ -42,6 +51,11 @@ body {
     min-height: -moz-available;
     min-height: -webkit-fill-available;
     min-height: fill-available;
+    animation: transitionIn 700ms;
+    animation-delay: 1s;
+    animation-timing-function: cubic-bezier(0.42,0,1,1);
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 .menu-area li{
@@ -55,7 +69,7 @@ body {
     font-family: "portgas_bold";
     font-size: 1.6rem;
     color: white;
-    transition: color 0.05s;
+    transition: color 50ms;
 }
 
 .menu-area li a:hover{
@@ -90,7 +104,7 @@ ion-icon {
 
 .socials-links {
     color: white;
-    transition: color 0.05s;
+    transition: color 50ms;
     text-decoration: none;
 }
 
@@ -104,6 +118,7 @@ footer {
     flex-direction: column;
     position: fixed;
     justify-content: end;
+    top: 90%;
     right: 60px;
     bottom: 52px;
     color: white;
