@@ -10,6 +10,7 @@ body {
     height: 931px;
     background-repeat: no-repeat;
     background-size: 1439px;
+    background-position: bottom center;
 }
 
 @font-face {
