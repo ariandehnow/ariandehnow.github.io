@@ -1,17 +1,38 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+/* Desktop-only view. 
+ * Largest mobile view is iPad Pro with 1366 in landscape mode
+ */
+ 
+  /* Large mobile device screens */
+  @media only screen and (min-width:501px) {
+    :root {
 
-body {
-    font-family: system-ui;
-    background-image: url("../images/red_hay.png");
-    width: 100%;
-    height: 931px;
-    background-repeat: no-repeat;
-    background-size: 1439px;
-    background-position: center center;
-}
+        --bg-image: url("../images/red_hay_web.png");
+        --bg-width: 100vw;
+        --bg-height: 100vh;
+        --bg-pos: center center;
+        --bg-size: cover;
+    }
+  }
+  /* Smallest image for phone screens */
+  @media only screen and (max-width:500px) {
+    :root {
+        --bg-image: url("../images/red_hay_mobile1.png");
+        --bg-height: 100vh;
+        --bg-pos: center center;
+        --bg-size: cover;
+    }
+  }
+
+  body {
+    background-color: #fff;
+    margin: 0px auto;
+    padding: 0px auto;
+    background: var(--bg-image) var(--bg-pos) no-repeat;
+    width: var(--bg-width);
+    height: var(--bg-height);
+    background-size: var(--bg-size);
+  }
+
 
 @font-face {
     font-family: portgas_bold;
@@ -27,10 +48,6 @@ body {
     font-family: source_code;
     src: url("../fonts/source-code-pro/SourceCodePro-Regular.otf");
   }
-
-.title {
-    font-weight: bold;    
-}
 
 @keyframes transitionIn {
     0% {
